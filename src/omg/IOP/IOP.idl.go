@@ -3,9 +3,9 @@
 package IOP
 
 import __fmt__ "fmt"
+import __goIdlCorba__ "github.com/bhbosman/goIdlCorba"
 import __goidl__ "github.com/bhbosman/goidl"
 import __json__ "encoding/json"
-import __omg__ "github.com/bhbosman/orb/src/omg"
 import __reflect__ "reflect"
 import __yaccidl__ "github.com/bhbosman/yaccidl"
 
@@ -54,7 +54,7 @@ const IopTagUipmc uint32 = 3
 type IopTaggedProfile struct {
 	__goidl__.IdlObject
 	Tag uint32 `json:"Tag"`
-	ProfileData __omg__.CorbaOctetSeq `json:"ProfileData"`
+	ProfileData __goIdlCorba__.CorbaOctetSeq `json:"ProfileData"`
 }
 
 //noinspection GoSnakeCaseUsage
@@ -70,7 +70,7 @@ func NewDefaultIopTaggedProfile() *IopTaggedProfile {
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "tag", Type: "IOP::ProfileId" Scope: "IdlTypedef"
 		Tag: 0,
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "profile_data", Type: "CORBA::OctetSeq" Scope: "IdlTypedef"
-		ProfileData: __omg__.CorbaOctetSeq(nil),
+		ProfileData: __goIdlCorba__.CorbaOctetSeq(nil),
 	}
 }
 
@@ -79,7 +79,7 @@ func NewIopTaggedProfile(
 	//"StructDclAllParamsConstructorParamService"
 	Tag uint32,
 	//"StructDclAllParamsConstructorParamService"
-	ProfileData __omg__.CorbaOctetSeq) *IopTaggedProfile {
+	ProfileData __goIdlCorba__.CorbaOctetSeq) *IopTaggedProfile {
 	//noinspection GoRedundantConversion
 	return &IopTaggedProfile{
 		IdlObject: __goidl__.IdlObject{
@@ -100,7 +100,7 @@ func NewRandomIopTaggedProfile(randomGenerator __goidl__.IRandomDataGenerator) *
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "tag", Type: "IOP::ProfileId" Scope: "IdlTypedef"
 		Tag: randomGenerator.UnsignedLongTypeValue(__reflect__.TypeOf((*IopTaggedProfile)(nil)), "Tag"),
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "profile_data", Type: "CORBA::OctetSeq" Scope: "IdlTypedef"
-		ProfileData: __omg__.CorbaOctetSeq(nil),
+		ProfileData: __goIdlCorba__.CorbaOctetSeq(nil),
 	}
 }
 
@@ -128,7 +128,7 @@ func (self *IopTaggedProfile) ReadValue(stream __goidl__.IReadAny) error {
 		return err
 	}
 	// WriteStructHelper::WriteStructMemberExtractValue(IdlSequence)
-	self.ProfileData, err = __omg__.CorbaOctetSeqHelper.Read(stream)
+	self.ProfileData, err = __goIdlCorba__.CorbaOctetSeqHelper.Read(stream)
 	if err != nil {
 		return err
 	}
@@ -155,7 +155,7 @@ func (self *IopTaggedProfile) Write(stream __goidl__.IWriteAny) error {
 		return err
 	}
 	// WriteStructHelper::WriteStructMemberInsert(IdlSequence)
-	err = __omg__.CorbaOctetSeqHelper.Write(stream, self.ProfileData)
+	err = __goIdlCorba__.CorbaOctetSeqHelper.Write(stream, self.ProfileData)
 	if err != nil {
 		return err
 	}
@@ -864,7 +864,7 @@ func (self IopServiceId_Helper) Write(stream __goidl__.IWriteAny, v uint32) erro
 type IopServiceContext struct {
 	__goidl__.IdlObject
 	ContextId uint32 `json:"ContextId"`
-	ContextData __omg__.CorbaOctetSeq `json:"ContextData"`
+	ContextData __goIdlCorba__.CorbaOctetSeq `json:"ContextData"`
 }
 
 //noinspection GoSnakeCaseUsage
@@ -880,7 +880,7 @@ func NewDefaultIopServiceContext() *IopServiceContext {
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "context_id", Type: "IOP::ServiceId" Scope: "IdlTypedef"
 		ContextId: 0,
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "context_data", Type: "CORBA::OctetSeq" Scope: "IdlTypedef"
-		ContextData: __omg__.CorbaOctetSeq(nil),
+		ContextData: __goIdlCorba__.CorbaOctetSeq(nil),
 	}
 }
 
@@ -889,7 +889,7 @@ func NewIopServiceContext(
 	//"StructDclAllParamsConstructorParamService"
 	ContextId uint32,
 	//"StructDclAllParamsConstructorParamService"
-	ContextData __omg__.CorbaOctetSeq) *IopServiceContext {
+	ContextData __goIdlCorba__.CorbaOctetSeq) *IopServiceContext {
 	//noinspection GoRedundantConversion
 	return &IopServiceContext{
 		IdlObject: __goidl__.IdlObject{
@@ -910,7 +910,7 @@ func NewRandomIopServiceContext(randomGenerator __goidl__.IRandomDataGenerator) 
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "context_id", Type: "IOP::ServiceId" Scope: "IdlTypedef"
 		ContextId: randomGenerator.UnsignedLongTypeValue(__reflect__.TypeOf((*IopServiceContext)(nil)), "ContextId"),
 		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "context_data", Type: "CORBA::OctetSeq" Scope: "IdlTypedef"
-		ContextData: __omg__.CorbaOctetSeq(nil),
+		ContextData: __goIdlCorba__.CorbaOctetSeq(nil),
 	}
 }
 
@@ -938,7 +938,7 @@ func (self *IopServiceContext) ReadValue(stream __goidl__.IReadAny) error {
 		return err
 	}
 	// WriteStructHelper::WriteStructMemberExtractValue(IdlSequence)
-	self.ContextData, err = __omg__.CorbaOctetSeqHelper.Read(stream)
+	self.ContextData, err = __goIdlCorba__.CorbaOctetSeqHelper.Read(stream)
 	if err != nil {
 		return err
 	}
@@ -965,7 +965,7 @@ func (self *IopServiceContext) Write(stream __goidl__.IWriteAny) error {
 		return err
 	}
 	// WriteStructHelper::WriteStructMemberInsert(IdlSequence)
-	err = __omg__.CorbaOctetSeqHelper.Write(stream, self.ContextData)
+	err = __goIdlCorba__.CorbaOctetSeqHelper.Write(stream, self.ContextData)
 	if err != nil {
 		return err
 	}
@@ -1355,20 +1355,20 @@ type IopCodec interface {
 	//Exceptions for : Encode
 	//	IopCodecInvalidTypeForEncoding
 	// Original name: "encode"
-	Encode(Data __goidl__.IdlAny) (result __omg__.CorbaOctetSeq, err error)
+	Encode(Data __goidl__.IdlAny) (result __goIdlCorba__.CorbaOctetSeq, err error)
 	//Exceptions for : Decode
 	//	IopCodecFormatMismatch
 	// Original name: "decode"
-	Decode(Data __omg__.CorbaOctetSeq) (result __goidl__.IdlAny, err error)
+	Decode(Data __goIdlCorba__.CorbaOctetSeq) (result __goidl__.IdlAny, err error)
 	//Exceptions for : EncodeValue
 	//	IopCodecInvalidTypeForEncoding
 	// Original name: "encode_value"
-	EncodeValue(Data __goidl__.IdlAny) (result __omg__.CorbaOctetSeq, err error)
+	EncodeValue(Data __goidl__.IdlAny) (result __goIdlCorba__.CorbaOctetSeq, err error)
 	//Exceptions for : DecodeValue
 	//	IopCodecFormatMismatch
 	//	IopCodecTypeMismatch
 	// Original name: "decode_value"
-	DecodeValue(Data __omg__.CorbaOctetSeq, Tc __omg__.CorbaTypeCode) (result __goidl__.IdlAny, err error)
+	DecodeValue(Data __goIdlCorba__.CorbaOctetSeq, Tc __goIdlCorba__.CorbaTypeCode) (result __goidl__.IdlAny, err error)
 }
 
 //noinspection GoSnakeCaseUsage
