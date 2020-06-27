@@ -1,0 +1,10 @@
+import ::Abc;
+module Three
+{
+    typedef Object TypeRepository;
+//    typedef Abc::Abc Abc;
+    struct Def{
+        Abc::Abc a;
+        Abc::MagicN Magic;
+    };
+};

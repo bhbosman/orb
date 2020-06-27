@@ -1,0 +1,7 @@
+#include "../common/common.idl"
+
+
+typedef CommonEnum App01Enum;
+//typedef sequence<CommonEnum> App01EnumSeq;
+
+

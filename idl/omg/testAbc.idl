@@ -1,0 +1,7 @@
+module Abc
+{
+    typedef char MagicN[4];
+    struct Abc{
+        string a;
+    };
+};

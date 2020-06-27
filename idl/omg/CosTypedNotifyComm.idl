@@ -1,0 +1,33 @@
+//File: CosTypedNotifyComm.idl
+//Part of the Notification Service
+
+#ifndef _COS_TYPED_NOTIFY_COMM_IDL_
+#define _COS_TYPED_NOTIFY_COMM_IDL_
+
+#ifdef _PRE_3_0_COMPILER_
+#pragma prefix "omg.org"
+#include <CosNotifyChannelAdmin.idl>
+#include <CosTypedEventComm.idl>
+#else
+typeprefix CosTypedNotifyComm "omg.org";
+import ::CosNotifyChannelAdmin;
+import ::CosTypedEventComm;
+#endif
+
+
+
+module CosTypedNotifyComm {
+
+        interface TypedPushConsumer :
+                CosTypedEventComm::TypedPushConsumer,
+                CosNotifyComm::NotifyPublish {
+        }; // TypedPushConsumer
+
+        interface TypedPullSupplier :
+                CosTypedEventComm::TypedPullSupplier,
+                CosNotifyComm::NotifySubscribe {
+        }; // TypedPullSupplier
+
+}; // CosTypedNotifyComm
+
+#endif /* _COS_TYPED_NOTIFY_COMM_IDL_ */

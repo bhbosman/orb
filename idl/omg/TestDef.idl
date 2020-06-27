@@ -1,0 +1,7 @@
+import ::Abc;
+module Def
+{
+    struct Def{
+        Abc::Abc a;
+    };
+};

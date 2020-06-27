@@ -1,0 +1,345 @@
+module IntegrationWithExternalNotAligned
+{
+    struct OctetType
+    {
+        octet dummy;
+        octet Value;
+    };
+
+    struct OctetTypeArray
+    {
+        octet dummy;
+        octet Value[16];
+    };
+
+    typedef sequence<OctetType> OctetTypeSeq;
+    struct OctetTypeSequence
+    {
+        octet dummy;
+        OctetTypeSeq Seq;
+    };
+
+    struct CharType
+    {
+        octet dummy;
+        char Value;
+    };
+
+    struct CharTypeArray
+    {
+        octet dummy;
+        char Value[16];
+    };
+
+    typedef sequence<CharType> CharTypeSeq;
+    struct CharTypeSequence
+    {
+        octet dummy;
+        CharTypeSeq Seq;
+    };
+
+    struct WideCharType
+    {
+        octet dummy;
+        wchar Value;
+    };
+
+    struct WideCharTypeArray
+    {
+        octet dummy;
+        wchar Value[16];
+    };
+
+    typedef sequence<WideCharType> WideCharTypeSeq;
+    struct WideCharTypeSequence
+    {
+        octet dummy;
+        WideCharTypeSeq Seq;
+    };
+
+    struct StringType
+    {
+        octet dummy;
+        string Value;
+    };
+
+    struct StringTypeArray
+    {
+        octet dummy;
+        string Value[16];
+    };
+
+    typedef sequence<StringType> StringTypeSeq;
+    struct StringTypeSequence
+    {
+        octet dummy;
+        StringTypeSeq Seq;
+    };
+
+    struct WideStringType
+    {
+        octet dummy;
+        wstring Value;
+    };
+
+    struct WideStringTypeArray
+    {
+        octet dummy;
+        wstring Value[16];
+    };
+
+    typedef sequence<WideStringType> WideStringTypeSeq;
+    struct WideStringTypeSequence
+    {
+        octet dummy;
+        WideStringTypeSeq Seq;
+    };
+
+
+    struct ShortType
+    {
+        octet dummy;
+        short Value;
+    };
+
+    struct ShortTypeArray
+    {
+        octet dummy;
+        short Value[16];
+    };
+
+    typedef sequence<ShortType> ShortTypeSeq;
+    struct ShortTypeSequence
+    {
+        octet dummy;
+        ShortTypeSeq Seq;
+    };
+
+    struct UnsignedShortType
+    {
+        octet dummy;
+        unsigned short Value;
+    };
+
+    struct UnsignedShortTypeArray
+    {
+        octet dummy;
+        unsigned short Value[16];
+    };
+
+    typedef sequence<UnsignedShortType> UnsignedShortTypeSeq;
+    struct UnsignedShortTypeSequence
+    {
+        octet dummy;
+        UnsignedShortTypeSeq Seq;
+    };
+
+    struct LongType
+    {
+        octet dummy;
+        long Value;
+    };
+
+    struct LongTypeArray
+    {
+        octet dummy;
+        long Value[16];
+    };
+
+    typedef sequence<LongType> LongTypeSeq;
+    struct LongTypeSequence
+    {
+        octet dummy;
+        LongTypeSeq Seq;
+    };
+
+    struct UnsignedLongType
+    {
+        octet dummy;
+         unsigned long Value;
+    };
+
+    struct UnsignedLongTypeArray
+    {
+        octet dummy;
+        unsigned long Value[16];
+    };
+
+    typedef sequence<UnsignedLongType> UnsignedLongTypeSeq;
+    struct UnsignedLongTypeSequence
+    {
+        octet dummy;
+        UnsignedLongTypeSeq Seq;
+    };
+
+
+    struct FloatType
+    {
+        octet dummy;
+         float Value;
+    };
+
+    struct FloatTypeArray
+    {
+        octet dummy;
+        float Value[16];
+    };
+
+    typedef sequence<FloatType> FloatTypeSeq;
+    struct FloatTypeSequence
+    {
+        octet dummy;
+        FloatTypeSeq Seq;
+    };
+
+    struct DoubleType
+    {
+        octet dummy;
+         double Value;
+    };
+
+    struct DoubleTypeArray
+    {
+        octet dummy;
+        double Value[16];
+    };
+
+    typedef sequence<DoubleType> DoubleTypeSeq;
+    struct DoubleTypeSequence
+    {
+        octet dummy;
+        DoubleTypeSeq Seq;
+    };
+
+    enum EnumValue
+    {
+        ValueA,
+        ValueB
+    };
+
+    struct EnumValueType
+    {
+        octet dummy;
+         EnumValue Value;
+    };
+
+    struct EnumValueArray
+    {
+        octet dummy;
+        EnumValue Value[16];
+    };
+
+    typedef sequence< EnumValueType>  EnumValueTypeSeq;
+    struct EnumValueTypeSequence
+    {
+        octet dummy;
+         EnumValueTypeSeq Seq;
+    };
+
+
+    struct LongLongType
+    {
+        octet dummy;
+         long long Value;
+    };
+
+    struct LongLongTypeArray
+    {
+        octet dummy;
+        long long Value[16];
+    };
+
+    typedef sequence<LongLongType>  LongLongTypeSeq;
+    struct LongLongTypeSeqSequence
+    {
+        octet dummy;
+         LongLongTypeSeq Seq;
+    };
+
+    struct UnsignedLongLongType
+    {
+        octet dummy;
+         unsigned long long Value;
+    };
+
+    struct UnsignedLongLongTypeArray
+    {
+        octet dummy;
+        unsigned long long Value[16];
+    };
+
+    typedef sequence<UnsignedLongLongType>  UnsignedLongLongTypeSeq;
+    struct UnsignedLongLongTypeSequence
+    {
+        octet dummy;
+         UnsignedLongLongTypeSeq Seq;
+    };
+
+    struct BooleanType
+    {
+        octet dummy;
+         boolean Value;
+    };
+
+    struct BooleanTypeArray
+    {
+        octet dummy;
+        boolean Value[16];
+    };
+
+    typedef sequence<BooleanType>  BooleanTypeSeq;
+    struct BooleanTypeSequence
+    {
+        octet dummy;
+         BooleanTypeSeq Seq;
+    };
+
+    interface IIntegrationWithExternalNotAligned
+    {
+        OctetType MethodOctetType(in OctetType data);
+        OctetTypeArray MethodOctetTypeArray( in OctetTypeArray data);
+        OctetTypeSequence MethodOctetTypeSequence( in OctetTypeSequence data);
+        CharType MethodCharType( in CharType data);
+        CharTypeArray MethodCharTypeArray( in CharTypeArray data);
+        CharTypeSequence MethodCharTypeSequence( in CharTypeSequence data);
+        WideCharType MethodWideCharType( in WideCharType data);
+        WideCharTypeArray MethodWideCharTypeArray( in WideCharTypeArray data);
+        WideCharTypeSequence MethodWideCharTypeSequence( in WideCharTypeSequence data);
+        StringType MethodStringType( in StringType data);
+        StringTypeArray MethodStringTypeArray( in StringTypeArray data);
+        StringTypeSequence MethodStringTypeSequence( in StringTypeSequence data);
+        WideStringType MethodWideStringType( in WideStringType data);
+        WideStringTypeArray MethodWideStringTypeArray( in WideStringTypeArray data);
+        WideStringTypeSequence MethodWideStringTypeSequence( in WideStringTypeSequence data);
+        ShortType MethodShortType( in ShortType data);
+        ShortTypeArray MethodShortTypeArray( in ShortTypeArray data);
+        ShortTypeSequence MethodShortTypeSequence( in ShortTypeSequence data);
+        UnsignedShortType MethodUnsignedShortType( in UnsignedShortType data);
+        UnsignedShortTypeArray MethodUnsignedShortTypeArray( in UnsignedShortTypeArray data);
+        UnsignedShortTypeSequence MethodUnsignedShortTypeSequence( in UnsignedShortTypeSequence data);
+        LongType MethodLongType( in LongType data);
+        LongTypeArray MethodLongTypeArray( in LongTypeArray data);
+        LongTypeSequence MethodLongTypeSequence( in LongTypeSequence data);
+        UnsignedLongType MethodUnsignedLongType( in UnsignedLongType data);
+        UnsignedLongTypeArray MethodUnsignedLongTypeArray( in UnsignedLongTypeArray data);
+        UnsignedLongTypeSequence MethodUnsignedLongTypeSequence( in UnsignedLongTypeSequence data);
+        FloatType MethodFloatType( in FloatType data);
+        FloatTypeArray MethodFloatTypeArray( in FloatTypeArray data);
+        FloatTypeSequence MethodFloatTypeSequence( in FloatTypeSequence data);
+        DoubleType MethodDoubleType( in DoubleType data);
+        DoubleTypeArray MethodDoubleTypeArray( in DoubleTypeArray data);
+        DoubleTypeSequence MethodDoubleTypeSequence( in DoubleTypeSequence data);
+        EnumValueType MethodEnumValueType( in EnumValueType data);
+        EnumValueArray MethodEnumValueArray( in EnumValueArray data);
+        EnumValueTypeSequence MethodEnumValueTypeSequence( in EnumValueTypeSequence data);
+        LongLongType MethodLongLongType( in LongLongType data);
+        LongLongTypeArray MethodLongLongTypeArray( in LongLongTypeArray data);
+        LongLongTypeSeqSequence MethodLongLongTypeSeqSequence( in LongLongTypeSeqSequence data);
+        UnsignedLongLongType MethodUnsignedLongLongType( in UnsignedLongLongType data);
+        UnsignedLongLongTypeArray MethodUnsignedLongLongTypeArray( in UnsignedLongLongTypeArray data);
+        UnsignedLongLongTypeSequence MethodUnsignedLongLongTypeSequence( in UnsignedLongLongTypeSequence data);
+        BooleanType MethodBooleanType( in BooleanType data);
+        BooleanTypeArray MethodBooleanTypeArray( in BooleanTypeArray data);
+        BooleanTypeSequence MethodBooleanTypeSequence( in BooleanTypeSequence data);
+    };
+};

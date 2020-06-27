@@ -1,0 +1,27 @@
+#ifndef _TIMEBASE_IDL_
+#define _TIMEBASE_IDL_
+
+#ifdef _PRE_3_0_COMPILER_
+#pragma prefix "omg.org"
+#else
+typeprefix TimeBase "omg.org";
+#endif
+
+
+module TimeBase {
+  typedef unsigned long long TimeT;
+  typedef TimeT InaccuracyT;
+  typedef short TdfT;
+  struct UtcT {
+    TimeT time; // 8 octets
+    unsigned long inacclo; // 4 octets
+    unsigned short inacchi; // 2 octets
+    TdfT tdf; // 2 octets // total 16 octets.
+  };
+  struct IntervalT {
+    TimeT lower_bound;
+    TimeT upper_bound;
+  };
+};
+
+#endif

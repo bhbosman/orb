@@ -1,0 +1,17 @@
+module HelloApp
+{
+    struct Person
+    {
+        string Name;
+        string Surname;
+    };
+
+
+
+
+  interface Hello
+  {
+    string sayHello(in string hello, in long c);
+    oneway void shutdown();
+  };
+};
