@@ -1,7 +1,5 @@
 package omg
 
-import "errors"
-
 //var giopVersion10 *GiopVersion = NewGiopVersion(1, 0)
 //var giopVersion11 *GiopVersion = NewGiopVersion(1, 1)
 //var giopVersion12 *GiopVersion = NewGiopVersion(1, 2)
@@ -16,4 +14,4 @@ import "errors"
 //	return giopVersion12
 //}
 
-var InvalidSwitch error = errors.New("invalid switch")
+
