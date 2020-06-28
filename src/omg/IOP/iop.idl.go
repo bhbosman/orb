@@ -2,6 +2,9 @@
 
 package IOP
 
+import __goIdlCorba__ "github.com/bhbosman/goIdlCorba"
+import __goidl__ "github.com/bhbosman/goidl"
+
 // TypeDef declaration: "IOP::ProfileId", generatedBy by: "WriteTypeDefOfPrimitiveDcl"
 //Typedef Primitive declaration: "IOP::ProfileId" from: "uint32"
 type IopProfileId uint32

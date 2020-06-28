@@ -2,6 +2,12 @@
 
 package IOP
 
+import __fmt__ "fmt"
+import __goidl__ "github.com/bhbosman/goidl"
+import __json__ "encoding/json"
+import __reflect__ "reflect"
+import __yaccidl__ "github.com/bhbosman/yaccidl"
+
 // Exception declaration: "IOP::CodecFactory::UnknownEncoding", generatedBy by: "WriteStructDcl"
 // Exception Decl: true
 type IopCodecFactoryUnknownEncoding struct {

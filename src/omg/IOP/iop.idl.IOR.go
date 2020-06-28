@@ -2,6 +2,11 @@
 
 package IOP
 
+import __goidl__ "github.com/bhbosman/goidl"
+import __json__ "encoding/json"
+import __reflect__ "reflect"
+import __yaccidl__ "github.com/bhbosman/yaccidl"
+
 // Struct declaration: "IOP::IOR", generatedBy by: "WriteStructDcl"
 // Exception Decl: false
 type IopIor struct {
