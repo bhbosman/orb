@@ -6156,120 +6156,6 @@ func (self *IntegrationWithExternalNotAlignedBooleanTypeSequence) Write(stream _
 type IntegrationWithExternalNotAlignedBooleanTypeSequence_Helper struct {
 }
 
-// Interface declaration: "IntegrationWithExternalNotAligned::IIntegrationWithExternalNotAligned", generatedBy by: "WriteInterface"
-type IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned interface {
-	// Interface operations
-	// Original name: "MethodOctetType"
-	MethodOctetType(Data *IntegrationWithExternalNotAlignedOctetType) (result *IntegrationWithExternalNotAlignedOctetType, err error)
-	// Original name: "MethodOctetTypeArray"
-	MethodOctetTypeArray(Data *IntegrationWithExternalNotAlignedOctetTypeArray) (result *IntegrationWithExternalNotAlignedOctetTypeArray, err error)
-	// Original name: "MethodOctetTypeSequence"
-	MethodOctetTypeSequence(Data *IntegrationWithExternalNotAlignedOctetTypeSequence) (result *IntegrationWithExternalNotAlignedOctetTypeSequence, err error)
-	// Original name: "MethodCharType"
-	MethodCharType(Data *IntegrationWithExternalNotAlignedCharType) (result *IntegrationWithExternalNotAlignedCharType, err error)
-	// Original name: "MethodCharTypeArray"
-	MethodCharTypeArray(Data *IntegrationWithExternalNotAlignedCharTypeArray) (result *IntegrationWithExternalNotAlignedCharTypeArray, err error)
-	// Original name: "MethodCharTypeSequence"
-	MethodCharTypeSequence(Data *IntegrationWithExternalNotAlignedCharTypeSequence) (result *IntegrationWithExternalNotAlignedCharTypeSequence, err error)
-	// Original name: "MethodWideCharType"
-	MethodWideCharType(Data *IntegrationWithExternalNotAlignedWideCharType) (result *IntegrationWithExternalNotAlignedWideCharType, err error)
-	// Original name: "MethodWideCharTypeArray"
-	MethodWideCharTypeArray(Data *IntegrationWithExternalNotAlignedWideCharTypeArray) (result *IntegrationWithExternalNotAlignedWideCharTypeArray, err error)
-	// Original name: "MethodWideCharTypeSequence"
-	MethodWideCharTypeSequence(Data *IntegrationWithExternalNotAlignedWideCharTypeSequence) (result *IntegrationWithExternalNotAlignedWideCharTypeSequence, err error)
-	// Original name: "MethodStringType"
-	MethodStringType(Data *IntegrationWithExternalNotAlignedStringType) (result *IntegrationWithExternalNotAlignedStringType, err error)
-	// Original name: "MethodStringTypeArray"
-	MethodStringTypeArray(Data *IntegrationWithExternalNotAlignedStringTypeArray) (result *IntegrationWithExternalNotAlignedStringTypeArray, err error)
-	// Original name: "MethodStringTypeSequence"
-	MethodStringTypeSequence(Data *IntegrationWithExternalNotAlignedStringTypeSequence) (result *IntegrationWithExternalNotAlignedStringTypeSequence, err error)
-	// Original name: "MethodWideStringType"
-	MethodWideStringType(Data *IntegrationWithExternalNotAlignedWideStringType) (result *IntegrationWithExternalNotAlignedWideStringType, err error)
-	// Original name: "MethodWideStringTypeArray"
-	MethodWideStringTypeArray(Data *IntegrationWithExternalNotAlignedWideStringTypeArray) (result *IntegrationWithExternalNotAlignedWideStringTypeArray, err error)
-	// Original name: "MethodWideStringTypeSequence"
-	MethodWideStringTypeSequence(Data *IntegrationWithExternalNotAlignedWideStringTypeSequence) (result *IntegrationWithExternalNotAlignedWideStringTypeSequence, err error)
-	// Original name: "MethodShortType"
-	MethodShortType(Data *IntegrationWithExternalNotAlignedShortType) (result *IntegrationWithExternalNotAlignedShortType, err error)
-	// Original name: "MethodShortTypeArray"
-	MethodShortTypeArray(Data *IntegrationWithExternalNotAlignedShortTypeArray) (result *IntegrationWithExternalNotAlignedShortTypeArray, err error)
-	// Original name: "MethodShortTypeSequence"
-	MethodShortTypeSequence(Data *IntegrationWithExternalNotAlignedShortTypeSequence) (result *IntegrationWithExternalNotAlignedShortTypeSequence, err error)
-	// Original name: "MethodUnsignedShortType"
-	MethodUnsignedShortType(Data *IntegrationWithExternalNotAlignedUnsignedShortType) (result *IntegrationWithExternalNotAlignedUnsignedShortType, err error)
-	// Original name: "MethodUnsignedShortTypeArray"
-	MethodUnsignedShortTypeArray(Data *IntegrationWithExternalNotAlignedUnsignedShortTypeArray) (result *IntegrationWithExternalNotAlignedUnsignedShortTypeArray, err error)
-	// Original name: "MethodUnsignedShortTypeSequence"
-	MethodUnsignedShortTypeSequence(Data *IntegrationWithExternalNotAlignedUnsignedShortTypeSequence) (result *IntegrationWithExternalNotAlignedUnsignedShortTypeSequence, err error)
-	// Original name: "MethodLongType"
-	MethodLongType(Data *IntegrationWithExternalNotAlignedLongType) (result *IntegrationWithExternalNotAlignedLongType, err error)
-	// Original name: "MethodLongTypeArray"
-	MethodLongTypeArray(Data *IntegrationWithExternalNotAlignedLongTypeArray) (result *IntegrationWithExternalNotAlignedLongTypeArray, err error)
-	// Original name: "MethodLongTypeSequence"
-	MethodLongTypeSequence(Data *IntegrationWithExternalNotAlignedLongTypeSequence) (result *IntegrationWithExternalNotAlignedLongTypeSequence, err error)
-	// Original name: "MethodUnsignedLongType"
-	MethodUnsignedLongType(Data *IntegrationWithExternalNotAlignedUnsignedLongType) (result *IntegrationWithExternalNotAlignedUnsignedLongType, err error)
-	// Original name: "MethodUnsignedLongTypeArray"
-	MethodUnsignedLongTypeArray(Data *IntegrationWithExternalNotAlignedUnsignedLongTypeArray) (result *IntegrationWithExternalNotAlignedUnsignedLongTypeArray, err error)
-	// Original name: "MethodUnsignedLongTypeSequence"
-	MethodUnsignedLongTypeSequence(Data *IntegrationWithExternalNotAlignedUnsignedLongTypeSequence) (result *IntegrationWithExternalNotAlignedUnsignedLongTypeSequence, err error)
-	// Original name: "MethodFloatType"
-	MethodFloatType(Data *IntegrationWithExternalNotAlignedFloatType) (result *IntegrationWithExternalNotAlignedFloatType, err error)
-	// Original name: "MethodFloatTypeArray"
-	MethodFloatTypeArray(Data *IntegrationWithExternalNotAlignedFloatTypeArray) (result *IntegrationWithExternalNotAlignedFloatTypeArray, err error)
-	// Original name: "MethodFloatTypeSequence"
-	MethodFloatTypeSequence(Data *IntegrationWithExternalNotAlignedFloatTypeSequence) (result *IntegrationWithExternalNotAlignedFloatTypeSequence, err error)
-	// Original name: "MethodDoubleType"
-	MethodDoubleType(Data *IntegrationWithExternalNotAlignedDoubleType) (result *IntegrationWithExternalNotAlignedDoubleType, err error)
-	// Original name: "MethodDoubleTypeArray"
-	MethodDoubleTypeArray(Data *IntegrationWithExternalNotAlignedDoubleTypeArray) (result *IntegrationWithExternalNotAlignedDoubleTypeArray, err error)
-	// Original name: "MethodDoubleTypeSequence"
-	MethodDoubleTypeSequence(Data *IntegrationWithExternalNotAlignedDoubleTypeSequence) (result *IntegrationWithExternalNotAlignedDoubleTypeSequence, err error)
-	// Original name: "MethodEnumValueType"
-	MethodEnumValueType(Data *IntegrationWithExternalNotAlignedEnumValueType) (result *IntegrationWithExternalNotAlignedEnumValueType, err error)
-	// Original name: "MethodEnumValueArray"
-	MethodEnumValueArray(Data *IntegrationWithExternalNotAlignedEnumValueArray) (result *IntegrationWithExternalNotAlignedEnumValueArray, err error)
-	// Original name: "MethodEnumValueTypeSequence"
-	MethodEnumValueTypeSequence(Data *IntegrationWithExternalNotAlignedEnumValueTypeSequence) (result *IntegrationWithExternalNotAlignedEnumValueTypeSequence, err error)
-	// Original name: "MethodLongLongType"
-	MethodLongLongType(Data *IntegrationWithExternalNotAlignedLongLongType) (result *IntegrationWithExternalNotAlignedLongLongType, err error)
-	// Original name: "MethodLongLongTypeArray"
-	MethodLongLongTypeArray(Data *IntegrationWithExternalNotAlignedLongLongTypeArray) (result *IntegrationWithExternalNotAlignedLongLongTypeArray, err error)
-	// Original name: "MethodLongLongTypeSeqSequence"
-	MethodLongLongTypeSeqSequence(Data *IntegrationWithExternalNotAlignedLongLongTypeSeqSequence) (result *IntegrationWithExternalNotAlignedLongLongTypeSeqSequence, err error)
-	// Original name: "MethodUnsignedLongLongType"
-	MethodUnsignedLongLongType(Data *IntegrationWithExternalNotAlignedUnsignedLongLongType) (result *IntegrationWithExternalNotAlignedUnsignedLongLongType, err error)
-	// Original name: "MethodUnsignedLongLongTypeArray"
-	MethodUnsignedLongLongTypeArray(Data *IntegrationWithExternalNotAlignedUnsignedLongLongTypeArray) (result *IntegrationWithExternalNotAlignedUnsignedLongLongTypeArray, err error)
-	// Original name: "MethodUnsignedLongLongTypeSequence"
-	MethodUnsignedLongLongTypeSequence(Data *IntegrationWithExternalNotAlignedUnsignedLongLongTypeSequence) (result *IntegrationWithExternalNotAlignedUnsignedLongLongTypeSequence, err error)
-	// Original name: "MethodBooleanType"
-	MethodBooleanType(Data *IntegrationWithExternalNotAlignedBooleanType) (result *IntegrationWithExternalNotAlignedBooleanType, err error)
-	// Original name: "MethodBooleanTypeArray"
-	MethodBooleanTypeArray(Data *IntegrationWithExternalNotAlignedBooleanTypeArray) (result *IntegrationWithExternalNotAlignedBooleanTypeArray, err error)
-	// Original name: "MethodBooleanTypeSequence"
-	MethodBooleanTypeSequence(Data *IntegrationWithExternalNotAlignedBooleanTypeSequence) (result *IntegrationWithExternalNotAlignedBooleanTypeSequence, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAlignedId_Const = "IDL:IntegrationWithExternalNotAligned/IIntegrationWithExternalNotAligned:1.0"
-
-func (self IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper) Id() string {
-	return IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAlignedId_Const
-}
-
-func (self IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper) Read(stream __goidl__.IReadAny) (IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned, error) {
-	return nil, nil
-}
-
-func (self IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper) Write(stream __goidl__.IWriteAny, v IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned) error {
-	return nil
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedOctetTypeHelper = IntegrationWithExternalNotAlignedOctetType_Helper{}
@@ -6453,9 +6339,6 @@ var IntegrationWithExternalNotAlignedBooleanTypeSeqHelper = IntegrationWithExter
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedBooleanTypeSequenceHelper = IntegrationWithExternalNotAlignedBooleanTypeSequence_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAlignedHelper = IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(

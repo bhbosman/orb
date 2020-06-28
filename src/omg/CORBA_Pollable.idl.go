@@ -8,60 +8,6 @@ import __json__ "encoding/json"
 import __reflect__ "reflect"
 import __yaccidl__ "github.com/bhbosman/yaccidl"
 
-// Interface declaration: "CORBA::Pollable", generatedBy by: "WriteInterface"
-type CorbaPollable interface {
-	// Interface operations
-	// Original name: "is_ready"
-	IsReady(Timeout uint32) (result bool, err error)
-	// Original name: "create_pollable_set"
-	CreatePollableSet() (result CorbaPollableSet, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaPollable_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaPollableId_Const = "IDL:omg.org/CORBA/Pollable:1.0"
-
-func (self CorbaPollable_Helper) Id() string {
-	return CorbaPollableId_Const
-}
-
-func (self CorbaPollable_Helper) Read(stream __goidl__.IReadAny) (CorbaPollable, error) {
-	return nil, nil
-}
-
-func (self CorbaPollable_Helper) Write(stream __goidl__.IWriteAny, v CorbaPollable) error {
-	return nil
-}
-
-// Interface declaration: "CORBA::DIIPollable", generatedBy by: "WriteInterface"
-type CorbaDIIPollable interface {
-	//No duplicate operations found in the base interfaces.
-	CorbaPollable
-	// Interface operations
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaDIIPollable_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaDIIPollableId_Const = "IDL:omg.org/CORBA/DIIPollable:1.0"
-
-func (self CorbaDIIPollable_Helper) Id() string {
-	return CorbaDIIPollableId_Const
-}
-
-func (self CorbaDIIPollable_Helper) Read(stream __goidl__.IReadAny) (CorbaDIIPollable, error) {
-	return nil, nil
-}
-
-func (self CorbaDIIPollable_Helper) Write(stream __goidl__.IWriteAny, v CorbaDIIPollable) error {
-	return nil
-}
-
 // Exception declaration: "CORBA::PollableSet::NoPossiblePollable", generatedBy by: "WriteStructDcl"
 // Exception Decl: true
 type CorbaPollableSetNoPossiblePollable struct {
@@ -230,59 +176,12 @@ func (self *CorbaPollableSetUnknownPollable) Write(stream __goidl__.IWriteAny) e
 type CorbaPollableSetUnknownPollable_Helper struct {
 }
 
-// Interface declaration: "CORBA::PollableSet", generatedBy by: "WriteInterface"
-type CorbaPollableSet interface {
-	// Interface operations
-	// Original name: "create_dii_pollable"
-	CreateDiiPollable() (result CorbaDIIPollable, err error)
-	// Original name: "add_pollable"
-	AddPollable(Potential CorbaPollable) (error error)
-	//Exceptions for : GetReadyPollable
-	//	CorbaPollableSetNoPossiblePollable
-	// Original name: "get_ready_pollable"
-	GetReadyPollable(Timeout uint32) (result CorbaPollable, err error)
-	//Exceptions for : Remove
-	//	CorbaPollableSetUnknownPollable
-	// Original name: "remove"
-	Remove(Potential CorbaPollable) (error error)
-	// Original name: "number_left"
-	NumberLeft() (result uint16, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaPollableSet_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaPollableSetId_Const = "IDL:omg.org/CORBA/PollableSet:1.0"
-
-func (self CorbaPollableSet_Helper) Id() string {
-	return CorbaPollableSetId_Const
-}
-
-func (self CorbaPollableSet_Helper) Read(stream __goidl__.IReadAny) (CorbaPollableSet, error) {
-	return nil, nil
-}
-
-func (self CorbaPollableSet_Helper) Write(stream __goidl__.IWriteAny, v CorbaPollableSet) error {
-	return nil
-}
-
-
-//noinspection GoUnusedGlobalVariable
-var CorbaPollableHelper = CorbaPollable_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaDIIPollableHelper = CorbaDIIPollable_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaPollableSetNoPossiblePollableHelper = CorbaPollableSetNoPossiblePollable_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaPollableSetUnknownPollableHelper = CorbaPollableSetUnknownPollable_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaPollableSetHelper = CorbaPollableSet_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(

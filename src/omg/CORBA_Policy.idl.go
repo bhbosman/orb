@@ -32,37 +32,6 @@ func (self CorbaPolicyType_Helper) Write(stream __goidl__.IWriteAny, v uint32) e
 	return __goidl__.IdlUInt32Helper.Write(stream, v)
 }
 
-// Interface declaration: "CORBA::Policy", generatedBy by: "WriteInterface"
-type CorbaPolicy interface {
-	// Interface operations
-	// Original name: "copy"
-	Copy() (result CorbaPolicy, err error)
-	// Original name: "destroy"
-	Destroy() (error error)
-	// Property PolicyType
-	// Get Property PolicyType
-	GetPolicyType() (uint32, error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaPolicy_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaPolicyId_Const = "IDL:omg.org/CORBA/Policy:1.0"
-
-func (self CorbaPolicy_Helper) Id() string {
-	return CorbaPolicyId_Const
-}
-
-func (self CorbaPolicy_Helper) Read(stream __goidl__.IReadAny) (CorbaPolicy, error) {
-	return nil, nil
-}
-
-func (self CorbaPolicy_Helper) Write(stream __goidl__.IWriteAny, v CorbaPolicy) error {
-	return nil
-}
-
 // TypeDef declaration: "CORBA::PolicyList", generatedBy by: "WriteTypeDefOfSequenceDcl"
 //Typedef Sequence declaration: CORBA::PolicyList
 type CorbaPolicyList []CorbaPolicy
@@ -496,69 +465,9 @@ func (self *CorbaInvalidPolicies) Write(stream __goidl__.IWriteAny) error {
 type CorbaInvalidPolicies_Helper struct {
 }
 
-// Interface declaration: "CORBA::PolicyManager", generatedBy by: "WriteInterface"
-type CorbaPolicyManager interface {
-	// Interface operations
-	// Original name: "get_policy_overrides"
-	GetPolicyOverrides(Ts CorbaPolicyTypeSeq) (result CorbaPolicyList, err error)
-	//Exceptions for : SetPolicyOverrides
-	//	CorbaInvalidPolicies
-	// Original name: "set_policy_overrides"
-	SetPolicyOverrides(Policies CorbaPolicyList, SetAdd uint32) (error error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaPolicyManager_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaPolicyManagerId_Const = "IDL:omg.org/CORBA/PolicyManager:1.0"
-
-func (self CorbaPolicyManager_Helper) Id() string {
-	return CorbaPolicyManagerId_Const
-}
-
-func (self CorbaPolicyManager_Helper) Read(stream __goidl__.IReadAny) (CorbaPolicyManager, error) {
-	return nil, nil
-}
-
-func (self CorbaPolicyManager_Helper) Write(stream __goidl__.IWriteAny, v CorbaPolicyManager) error {
-	return nil
-}
-
-// Interface declaration: "CORBA::PolicyCurrent", generatedBy by: "WriteInterface"
-type CorbaPolicyCurrent interface {
-	//No duplicate operations found in the base interfaces.
-	CorbaPolicyManager
-	CorbaCurrent
-	// Interface operations
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaPolicyCurrent_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaPolicyCurrentId_Const = "IDL:omg.org/CORBA/PolicyCurrent:1.0"
-
-func (self CorbaPolicyCurrent_Helper) Id() string {
-	return CorbaPolicyCurrentId_Const
-}
-
-func (self CorbaPolicyCurrent_Helper) Read(stream __goidl__.IReadAny) (CorbaPolicyCurrent, error) {
-	return nil, nil
-}
-
-func (self CorbaPolicyCurrent_Helper) Write(stream __goidl__.IWriteAny, v CorbaPolicyCurrent) error {
-	return nil
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var CorbaPolicyTypeHelper = CorbaPolicyType_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaPolicyHelper = CorbaPolicy_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaPolicyListHelper = CorbaPolicyList_Helper{}
@@ -580,12 +489,6 @@ var CorbaIndexListHelper = CorbaIndexList_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaInvalidPoliciesHelper = CorbaInvalidPolicies_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaPolicyManagerHelper = CorbaPolicyManager_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaPolicyCurrentHelper = CorbaPolicyCurrent_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(

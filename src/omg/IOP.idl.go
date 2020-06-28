@@ -1348,47 +1348,6 @@ func (self *IopCodecTypeMismatch) Write(stream __goidl__.IWriteAny) error {
 type IopCodecTypeMismatch_Helper struct {
 }
 
-// Interface declaration: "IOP::Codec", generatedBy by: "WriteInterface"
-type IopCodec interface {
-	// Interface operations
-	//Exceptions for : Encode
-	//	IopCodecInvalidTypeForEncoding
-	// Original name: "encode"
-	Encode(Data __goidl__.IdlAny) (result CorbaOctetSeq, err error)
-	//Exceptions for : Decode
-	//	IopCodecFormatMismatch
-	// Original name: "decode"
-	Decode(Data CorbaOctetSeq) (result __goidl__.IdlAny, err error)
-	//Exceptions for : EncodeValue
-	//	IopCodecInvalidTypeForEncoding
-	// Original name: "encode_value"
-	EncodeValue(Data __goidl__.IdlAny) (result CorbaOctetSeq, err error)
-	//Exceptions for : DecodeValue
-	//	IopCodecFormatMismatch
-	//	IopCodecTypeMismatch
-	// Original name: "decode_value"
-	DecodeValue(Data CorbaOctetSeq, Tc CorbaTypeCode) (result __goidl__.IdlAny, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type IopCodec_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const IopCodecId_Const = "IDL:omg.org/IOP/Codec:1.0"
-
-func (self IopCodec_Helper) Id() string {
-	return IopCodecId_Const
-}
-
-func (self IopCodec_Helper) Read(stream __goidl__.IReadAny) (IopCodec, error) {
-	return nil, nil
-}
-
-func (self IopCodec_Helper) Write(stream __goidl__.IWriteAny, v IopCodec) error {
-	return nil
-}
-
 // TypeDef declaration: "IOP::EncodingFormat", generatedBy by: "WriteTypeDefOfPrimitiveDcl"
 //Typedef Primitive declaration: "IOP::EncodingFormat" from: "int16"
 type IopEncodingFormat int16
@@ -1636,34 +1595,6 @@ func (self *IopCodecFactoryUnknownEncoding) Write(stream __goidl__.IWriteAny) er
 type IopCodecFactoryUnknownEncoding_Helper struct {
 }
 
-// Interface declaration: "IOP::CodecFactory", generatedBy by: "WriteInterface"
-type IopCodecFactory interface {
-	// Interface operations
-	//Exceptions for : CreateCodec
-	//	IopCodecFactoryUnknownEncoding
-	// Original name: "create_codec"
-	CreateCodec(Enc *IopEncoding) (result IopCodec, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type IopCodecFactory_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const IopCodecFactoryId_Const = "IDL:omg.org/IOP/CodecFactory:1.0"
-
-func (self IopCodecFactory_Helper) Id() string {
-	return IopCodecFactoryId_Const
-}
-
-func (self IopCodecFactory_Helper) Read(stream __goidl__.IReadAny) (IopCodecFactory, error) {
-	return nil, nil
-}
-
-func (self IopCodecFactory_Helper) Write(stream __goidl__.IWriteAny, v IopCodecFactory) error {
-	return nil
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var IopProfileIdHelper = IopProfileId_Helper{}
@@ -1714,9 +1645,6 @@ var IopCodecFormatMismatchHelper = IopCodecFormatMismatch_Helper{}
 var IopCodecTypeMismatchHelper = IopCodecTypeMismatch_Helper{}
 
 //noinspection GoUnusedGlobalVariable
-var IopCodecHelper = IopCodec_Helper{}
-
-//noinspection GoUnusedGlobalVariable
 var IopEncodingFormatHelper = IopEncodingFormat_Helper{}
 
 //noinspection GoUnusedGlobalVariable
@@ -1724,9 +1652,6 @@ var IopEncodingHelper = IopEncoding_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var IopCodecFactoryUnknownEncodingHelper = IopCodecFactoryUnknownEncoding_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var IopCodecFactoryHelper = IopCodecFactory_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(

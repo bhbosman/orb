@@ -280,102 +280,6 @@ func (self *CorbaTypeCodeBadKind) Write(stream __goidl__.IWriteAny) error {
 type CorbaTypeCodeBadKind_Helper struct {
 }
 
-// Interface declaration: "CORBA::TypeCode", generatedBy by: "WriteInterface"
-type CorbaTypeCode interface {
-	// Interface operations
-	// Original name: "equal"
-	Equal(Tc CorbaTypeCode) (result bool, err error)
-	// Original name: "equivalent"
-	Equivalent(Tc CorbaTypeCode) (result bool, err error)
-	// Original name: "get_compact_typecode"
-	GetCompactTypecode() (result CorbaTypeCode, err error)
-	// Original name: "kind"
-	Kind() (result uint32, err error)
-	//Exceptions for : Id
-	//	CorbaTypeCodeBadKind
-	// Original name: "id"
-	Id() (result string, err error)
-	//Exceptions for : Name
-	//	CorbaTypeCodeBadKind
-	// Original name: "name"
-	Name() (result string, err error)
-	//Exceptions for : MemberCount
-	//	CorbaTypeCodeBadKind
-	// Original name: "member_count"
-	MemberCount() (result uint32, err error)
-	//Exceptions for : MemberName
-	//	CorbaTypeCodeBadKind
-	//	CorbaTypeCodeBounds
-	// Original name: "member_name"
-	MemberName(Index uint32) (result string, err error)
-	//Exceptions for : MemberType
-	//	CorbaTypeCodeBadKind
-	//	CorbaTypeCodeBounds
-	// Original name: "member_type"
-	MemberType(Index uint32) (result CorbaTypeCode, err error)
-	//Exceptions for : MemberLabel
-	//	CorbaTypeCodeBadKind
-	//	CorbaTypeCodeBounds
-	// Original name: "member_label"
-	MemberLabel(Index uint32) (result __goidl__.IdlAny, err error)
-	//Exceptions for : DiscriminatorType
-	//	CorbaTypeCodeBadKind
-	// Original name: "discriminator_type"
-	DiscriminatorType() (result CorbaTypeCode, err error)
-	//Exceptions for : DefaultIndex
-	//	CorbaTypeCodeBadKind
-	// Original name: "default_index"
-	DefaultIndex() (result int32, err error)
-	//Exceptions for : Length
-	//	CorbaTypeCodeBadKind
-	// Original name: "length"
-	Length() (result uint32, err error)
-	//Exceptions for : ContentType
-	//	CorbaTypeCodeBadKind
-	// Original name: "content_type"
-	ContentType() (result CorbaTypeCode, err error)
-	//Exceptions for : FixedDigits
-	//	CorbaTypeCodeBadKind
-	// Original name: "fixed_digits"
-	FixedDigits() (result uint16, err error)
-	//Exceptions for : FixedScale
-	//	CorbaTypeCodeBadKind
-	// Original name: "fixed_scale"
-	FixedScale() (result int16, err error)
-	//Exceptions for : MemberVisibility
-	//	CorbaTypeCodeBadKind
-	//	CorbaTypeCodeBounds
-	// Original name: "member_visibility"
-	MemberVisibility(Index uint32) (result int16, err error)
-	//Exceptions for : TypeModifier
-	//	CorbaTypeCodeBadKind
-	// Original name: "type_modifier"
-	TypeModifier() (result int16, err error)
-	//Exceptions for : ConcreteBaseType
-	//	CorbaTypeCodeBadKind
-	// Original name: "concrete_base_type"
-	ConcreteBaseType() (result CorbaTypeCode, err error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaTypeCode_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaTypeCodeId_Const = "IDL:omg.org/CORBA/TypeCode:1.0"
-
-func (self CorbaTypeCode_Helper) Id() string {
-	return CorbaTypeCodeId_Const
-}
-
-func (self CorbaTypeCode_Helper) Read(stream __goidl__.IReadAny) (CorbaTypeCode, error) {
-	return nil, nil
-}
-
-func (self CorbaTypeCode_Helper) Write(stream __goidl__.IWriteAny, v CorbaTypeCode) error {
-	return nil
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var CorbaTCKindHelper = CorbaTCKind_Helper{}
@@ -388,9 +292,6 @@ var CorbaTypeCodeBoundsHelper = CorbaTypeCodeBounds_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaTypeCodeBadKindHelper = CorbaTypeCodeBadKind_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaTypeCodeHelper = CorbaTypeCode_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(

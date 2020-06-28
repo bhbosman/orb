@@ -825,126 +825,6 @@ func (self *CorbaOrbInvalidName) Write(stream __goidl__.IWriteAny) error {
 type CorbaOrbInvalidName_Helper struct {
 }
 
-// Interface declaration: "CORBA::ORB", generatedBy by: "WriteInterface"
-type CorbaOrb interface {
-	// Interface operations
-	// Original name: "id"
-	Id() (result string, err error)
-	// Original name: "object_to_string"
-	ObjectToString(Obj *__goidl__.IdlObject) (result string, err error)
-	// Original name: "string_to_object"
-	StringToObject(Str string) (result *__goidl__.IdlObject, err error)
-	// Original name: "create_list"
-	CreateList(Count int32) (NewList CorbaNVList, error error)
-	// Original name: "create_operation_list"
-	CreateOperationList(Oper CorbaOperationDef) (NewList CorbaNVList, error error)
-	// Original name: "get_default_context"
-	GetDefaultContext() (Ctx CorbaContext, error error)
-	// Original name: "send_multiple_requests_oneway"
-	SendMultipleRequestsOneway(Req CorbaRequestSeq) (error error)
-	// Original name: "send_multiple_requests_deferred"
-	SendMultipleRequestsDeferred(Req CorbaRequestSeq) (error error)
-	// Original name: "poll_next_response"
-	PollNextResponse() (result bool, err error)
-	//Exceptions for : GetNextResponse
-	//	CorbaWrongTransaction
-	// Original name: "get_next_response"
-	GetNextResponse() (Req CorbaRequest, error error)
-	// Original name: "get_service_information"
-	GetServiceInformation(ServiceType uint16) (ServiceInformation *CorbaServiceInformation, result bool, err error)
-	// Original name: "list_initial_services"
-	ListInitialServices() (result CorbaOrbObjectIdList, err error)
-	//Exceptions for : ResolveInitialReferences
-	//	CorbaOrbInvalidName
-	// Original name: "resolve_initial_references"
-	ResolveInitialReferences(Identifier string) (result *__goidl__.IdlObject, err error)
-	// Original name: "create_struct_tc"
-	CreateStructTc(Id string, Name string, Members CorbaStructMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "create_union_tc"
-	CreateUnionTc(Id string, Name string, DiscriminatorType CorbaTypeCode, Members CorbaUnionMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "create_enum_tc"
-	CreateEnumTc(Id string, Name string, Members CorbaEnumMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "create_alias_tc"
-	CreateAliasTc(Id string, Name string, OriginalType CorbaTypeCode) (result CorbaTypeCode, err error)
-	// Original name: "create_exception_tc"
-	CreateExceptionTc(Id string, Name string, Members CorbaStructMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "create_interface_tc"
-	CreateInterfaceTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_string_tc"
-	CreateStringTc(Bound uint32) (result CorbaTypeCode, err error)
-	// Original name: "create_wstring_tc"
-	CreateWstringTc(Bound uint32) (result CorbaTypeCode, err error)
-	// Original name: "create_fixed_tc"
-	CreateFixedTc(Digits uint16, Scale int16) (result CorbaTypeCode, err error)
-	// Original name: "create_sequence_tc"
-	CreateSequenceTc(Bound uint32, ElementType CorbaTypeCode) (result CorbaTypeCode, err error)
-	// Original name: "create_recursive_sequence_tc"
-	CreateRecursiveSequenceTc(Bound uint32, Offset uint32) (result CorbaTypeCode, err error)
-	// Original name: "create_array_tc"
-	CreateArrayTc(Length uint32, ElementType CorbaTypeCode) (result CorbaTypeCode, err error)
-	// Original name: "create_value_tc"
-	CreateValueTc(Id string, Name string, TypeModifier int16, ConcreteBase CorbaTypeCode, Members CorbaValueMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "create_value_box_tc"
-	CreateValueBoxTc(Id string, Name string, BoxedType CorbaTypeCode) (result CorbaTypeCode, err error)
-	// Original name: "create_native_tc"
-	CreateNativeTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_recursive_tc"
-	CreateRecursiveTc(Id string) (result CorbaTypeCode, err error)
-	// Original name: "create_abstract_interface_tc"
-	CreateAbstractInterfaceTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_local_interface_tc"
-	CreateLocalInterfaceTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_component_tc"
-	CreateComponentTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_home_tc"
-	CreateHomeTc(Id string, Name string) (result CorbaTypeCode, err error)
-	// Original name: "create_event_tc"
-	CreateEventTc(Id string, Name string, TypeModifier int16, ConcreteBase CorbaTypeCode, Members CorbaValueMemberSeq) (result CorbaTypeCode, err error)
-	// Original name: "work_pending"
-	WorkPending() (result bool, err error)
-	// Original name: "perform_work"
-	PerformWork() (error error)
-	// Original name: "run"
-	Run() (error error)
-	// Original name: "shutdown"
-	Shutdown(WaitForCompletion bool) (error error)
-	// Original name: "destroy"
-	Destroy() (error error)
-	//Exceptions for : CreatePolicy
-	//	CorbaPolicyError
-	// Original name: "create_policy"
-	CreatePolicy(Type uint32, Val __goidl__.IdlAny) (result CorbaPolicy, err error)
-	// Original name: "register_value_factory"
-	RegisterValueFactory(Id string, Factory CorbaValueFactory) (result CorbaValueFactory, err error)
-	// Original name: "unregister_value_factory"
-	UnregisterValueFactory(Id string) (error error)
-	// Original name: "lookup_value_factory"
-	LookupValueFactory(Id string) (result CorbaValueFactory, err error)
-	//Exceptions for : RegisterInitialReference
-	//	CorbaOrbInvalidName
-	// Original name: "register_initial_reference"
-	RegisterInitialReference(Id string, Obj *__goidl__.IdlObject) (error error)
-}
-
-//noinspection GoSnakeCaseUsage
-type CorbaOrb_Helper struct {
-}
-
-//noinspection GoSnakeCaseUsage
-const CorbaOrbId_Const = "IDL:omg.org/CORBA/ORB:1.0"
-
-func (self CorbaOrb_Helper) Id() string {
-	return CorbaOrbId_Const
-}
-
-func (self CorbaOrb_Helper) Read(stream __goidl__.IReadAny) (CorbaOrb, error) {
-	return nil, nil
-}
-
-func (self CorbaOrb_Helper) Write(stream __goidl__.IWriteAny, v CorbaOrb) error {
-	return nil
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var CorbaFlagsHelper = CorbaFlags_Helper{}
@@ -990,9 +870,6 @@ var CorbaOrbObjectIdListHelper = CorbaOrbObjectIdList_Helper{}
 
 //noinspection GoUnusedGlobalVariable
 var CorbaOrbInvalidNameHelper = CorbaOrbInvalidName_Helper{}
-
-//noinspection GoUnusedGlobalVariable
-var CorbaOrbHelper = CorbaOrb_Helper{}
 
 func init() {
 	__goidl__.AddRegistration(
