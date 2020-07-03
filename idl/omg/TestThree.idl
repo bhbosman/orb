@@ -1,4 +1,5 @@
 import ::Abc;
+import ::Def;
 module Three
 {
     typedef Object TypeRepository;
@@ -6,5 +7,6 @@ module Three
     struct Def{
         Abc::Abc a;
         Abc::MagicN Magic;
+        Def::Def S;
     };
 };

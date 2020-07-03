@@ -6,6 +6,7 @@
 #include <IOP.idl>
 #include <GIOP.idl>
 #else
+import ::Corba;
 import ::IOP;
 import ::GIOP;
 #endif //_PRE_3_0_COMPILER_
@@ -29,13 +30,13 @@ module MIOP
       UniqueId Id;
    };
 
-   //typedef GIOP::Version Version;
+   typedef GIOP::Version Version;
 
    typedef string Address;
 
    struct UIPMC_ProfileBody
    {
-      GIOP::Version miop_version;
+      Version miop_version;
       Address the_address;
       short the_port;
       IOP::TaggedComponentSeq components;

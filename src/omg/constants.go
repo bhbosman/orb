@@ -13,5 +13,3 @@ package omg
 //func GiopVersion12() *GiopVersion {
 //	return giopVersion12
 //}
-
-

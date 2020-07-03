@@ -11,6 +11,7 @@
 
 #pragma prefix "omg.org"
 #else
+import ::Corba;
 import ::IOP;
 #endif // _PRE_3_0_COMPILER_
 

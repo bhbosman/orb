@@ -8,6 +8,7 @@
 #pragma prefix "omg.org"
 #include <IOP.idl>
 #else
+import ::Corba;
 import ::IOP;
 #endif // _PRE_3_0_COMPILER_
 

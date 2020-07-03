@@ -4,4 +4,7 @@ module Abc
     struct Abc{
         string a;
     };
+
+
+    typedef sequence<Abc> AbcSeq;
 };

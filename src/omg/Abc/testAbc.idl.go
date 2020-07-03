@@ -3,9 +3,6 @@
 package Abc
 
 import __goidl__ "github.com/bhbosman/goidl"
-import __json__ "encoding/json"
-import __reflect__ "reflect"
-import __yaccidl__ "github.com/bhbosman/yaccidl"
 
 // TypeDef declaration: "Abc::MagicN", generatedBy by: "WriteTypeDefOfPrimitiveDcl"
 //Typedef Primitive declaration: "Abc::MagicN" from: "[4]byte"
@@ -46,123 +43,9 @@ func (self AbcMagicN_Helper) Write(stream __goidl__.IWriteAny, v [4]byte) error 
 	return nil
 }
 
-// Struct declaration: "Abc::Abc", generatedBy by: "WriteStructDcl"
-// Exception Decl: false
-type AbcAbc struct {
-	__goidl__.IdlObject
-	A string `json:"A"`
-}
-
-//noinspection GoSnakeCaseUsage
-const AbcAbcId_Const = "IDL:Abc/Abc:1.0"
-
-//noinspection GoUnusedExportedFunction
-func NewDefaultAbcAbc() *AbcAbc {
-	//noinspection GoRedundantConversion
-	return &AbcAbc{
-		IdlObject: __goidl__.IdlObject{
-			Id: AbcAbcId_Const,
-		},
-		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "a", Type: "IdlString" Scope: "StringType"
-		A: "",
-	}
-}
-
-//noinspection GoUnusedExportedFunction
-func NewAbcAbc(
-	//"StructDclAllParamsConstructorParamService"
-	A string) *AbcAbc {
-	//noinspection GoRedundantConversion
-	return &AbcAbc{
-		IdlObject: __goidl__.IdlObject{
-			Id: AbcAbcId_Const,
-		},
-		A: A,
-	}
-}
-
-//noinspection GoUnusedExportedFunction
-func NewRandomAbcAbc(randomGenerator __goidl__.IRandomDataGenerator) *AbcAbc {
-	//noinspection GoRedundantConversion
-	return &AbcAbc{
-		IdlObject: __goidl__.IdlObject{
-			Id: AbcAbcId_Const,
-		},
-		// "StructDclDefaultConstructorMemberDefaultValueService", MemberName: "a", Type: "IdlString" Scope: "StringType"
-		A: randomGenerator.StringTypeValue(__reflect__.TypeOf((*AbcAbc)(nil)), "A"),
-	}
-}
-
-func (self *AbcAbc) String() string {
-	b, err := __json__.Marshal(self)
-	if err != nil {
-		return ""
-	}
-	return string(b)
-}
-
-func (self *AbcAbc) GoString() string {
-	return self.String()
-}
-
-func (self *AbcAbc) ReadValue(stream __goidl__.IReadAny) error {
-	var err error
-	err = self.IdlObject.ReadValue(stream)
-	if err != nil {
-		return err
-	}
-	// WriteStructHelper::WriteStructMemberExtractValue(StringType)
-	self.A, err = __goidl__.IdlStringHelper.Read(stream)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-func (self *AbcAbc) Read(stream __goidl__.IReadAny) error {
-	err := self.ReadValue(stream)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-func (self *AbcAbc) Write(stream __goidl__.IWriteAny) error {
-	var err error
-	err = self.IdlObject.Write(stream)
-	if err != nil {
-		return err
-	}
-	// WriteStructHelper::WriteStructMemberInsert(StringType)
-	err = __goidl__.IdlStringHelper.Write(stream, self.A)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-//noinspection GoSnakeCaseUsage
-type AbcAbc_Helper struct {
-}
-
 
 //noinspection GoUnusedGlobalVariable
 var AbcMagicNHelper = AbcMagicN_Helper{}
 
-//noinspection GoUnusedGlobalVariable
-var AbcAbcHelper = AbcAbc_Helper{}
-
 func init() {
-	__goidl__.AddRegistration(
-		__goidl__.NewRegistrationInformation(
-			AbcAbcId_Const,
-			__yaccidl__.IdlStruct,
-			"testAbc.idl.go",
-			func() __goidl__.IIdlObject {
-				return NewDefaultAbcAbc()
-			},
-			func(generator __goidl__.IRandomDataGenerator) __goidl__.IIdlObject {
-				return NewRandomAbcAbc(generator)
-			},
-			__reflect__.TypeOf((*AbcAbc)(nil))))
 }
