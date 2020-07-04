@@ -1,0 +1,8 @@
+module MathService
+{
+    interface LongService
+    {
+        long SumLongValues(in long A, in long b);
+        long SumLongValues(in long A, in long b);
+    };
+};
