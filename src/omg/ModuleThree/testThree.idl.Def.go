@@ -13,9 +13,9 @@ import __yaccidl__ "github.com/bhbosman/yaccidl"
 // Exception Decl: false
 type ThreeDef struct {
 	__goidl__.IdlObject
-	A __Abc__.AbcAbc `json:"A"`
-	Magic [4]byte `json:"Magic"`
-	S __Def__.DefDef `json:"S"`
+	A     __Abc__.AbcAbc `json:"A"`
+	Magic [4]byte        `json:"Magic"`
+	S     __Def__.DefDef `json:"S"`
 }
 
 //noinspection GoSnakeCaseUsage
@@ -92,7 +92,6 @@ func (self *ThreeDef) Write(stream __goidl__.IWriteAny) error {
 //noinspection GoSnakeCaseUsage
 type ThreeDef_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var ThreeDefHelper = ThreeDef_Helper{}

@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalBooleanTypeArray) Write(stream __goidl__.IWri
 type IntegrationWithExternalBooleanTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalBooleanTypeArrayHelper = IntegrationWithExternalBooleanTypeArray_Helper{}
 

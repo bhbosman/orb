@@ -79,7 +79,6 @@ func (self *IntegrationWithExternalNotAlignedCharType) Write(stream __goidl__.IW
 type IntegrationWithExternalNotAlignedCharType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedCharTypeHelper = IntegrationWithExternalNotAlignedCharType_Helper{}
 

@@ -79,7 +79,6 @@ func (self *IntegrationWithExternalNotAlignedOctetType) Write(stream __goidl__.I
 type IntegrationWithExternalNotAlignedOctetType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedOctetTypeHelper = IntegrationWithExternalNotAlignedOctetType_Helper{}
 

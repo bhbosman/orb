@@ -69,7 +69,6 @@ func (self *AbcAbc) Write(stream __goidl__.IWriteAny) error {
 type AbcAbc_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var AbcAbcHelper = AbcAbc_Helper{}
 

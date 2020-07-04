@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalUnsignedLongLongTypeArray) Write(stream __goi
 type IntegrationWithExternalUnsignedLongLongTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalUnsignedLongLongTypeArrayHelper = IntegrationWithExternalUnsignedLongLongTypeArray_Helper{}
 

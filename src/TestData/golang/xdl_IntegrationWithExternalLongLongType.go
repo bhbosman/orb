@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalLongLongType) Write(stream __goidl__.IWriteAn
 type IntegrationWithExternalLongLongType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalLongLongTypeHelper = IntegrationWithExternalLongLongType_Helper{}
 

@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalLongLongTypeArray) Write(stream __goidl__.IWr
 type IntegrationWithExternalLongLongTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalLongLongTypeArrayHelper = IntegrationWithExternalLongLongTypeArray_Helper{}
 

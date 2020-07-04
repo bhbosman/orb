@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalOctetType) Write(stream __goidl__.IWriteAny) 
 type IntegrationWithExternalOctetType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalOctetTypeHelper = IntegrationWithExternalOctetType_Helper{}
 

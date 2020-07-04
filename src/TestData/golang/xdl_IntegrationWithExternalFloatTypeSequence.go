@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalFloatTypeSequence) Write(stream __goidl__.IWr
 type IntegrationWithExternalFloatTypeSequence_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalFloatTypeSequenceHelper = IntegrationWithExternalFloatTypeSequence_Helper{}
 

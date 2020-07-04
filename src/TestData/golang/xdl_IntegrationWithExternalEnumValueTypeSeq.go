@@ -43,7 +43,7 @@ func (self *IntegrationWithExternalEnumValueTypeSeq) ReadValue(stream __goidl__.
 		for i = 0; i < n; i++ {
 			self.Array[i] = &IntegrationWithExternalEnumValueType{}
 			err = self.Array[i].ReadValue(stream)
-				if err != nil {
+			if err != nil {
 				return err
 			}
 		}
@@ -66,7 +66,7 @@ func (self *IntegrationWithExternalEnumValueTypeSeq) Write(stream __goidl__.IWri
 	}
 	err = __goidl__.IdlUInt32Helper.Write(stream, uint32(len(self.Array)))
 	if err != nil {
-	return err
+		return err
 	}
 	if len(self.Array) > 0 {
 		for _, item := range self.Array {
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalEnumValueTypeSeq) Write(stream __goidl__.IWri
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalEnumValueTypeSeq_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalEnumValueTypeSeqHelper = IntegrationWithExternalEnumValueTypeSeq_Helper{}

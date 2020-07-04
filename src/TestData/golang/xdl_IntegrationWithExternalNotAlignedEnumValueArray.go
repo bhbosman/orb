@@ -10,7 +10,7 @@ import __reflect__ "reflect"
 // Exception Decl: false
 type IntegrationWithExternalNotAlignedEnumValueArray struct {
 	__goidl__.IdlObject
-	Dummy byte `json:"Dummy"`
+	Dummy byte       `json:"Dummy"`
 	Value [16]uint32 `json:"Value"`
 }
 
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalNotAlignedEnumValueArray) Write(stream __goid
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedEnumValueArray_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedEnumValueArrayHelper = IntegrationWithExternalNotAlignedEnumValueArray_Helper{}

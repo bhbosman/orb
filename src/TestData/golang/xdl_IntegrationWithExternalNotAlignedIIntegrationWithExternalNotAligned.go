@@ -118,7 +118,6 @@ func (self IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_H
 	return nil
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAlignedHelper = IntegrationWithExternalNotAlignedIIntegrationWithExternalNotAligned_Helper{}
 

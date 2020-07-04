@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalCharTypeArray) Write(stream __goidl__.IWriteA
 type IntegrationWithExternalCharTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalCharTypeArrayHelper = IntegrationWithExternalCharTypeArray_Helper{}
 

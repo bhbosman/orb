@@ -118,7 +118,6 @@ func (self IntegrationWithExternalIIntegrationWithExternal_Helper) Write(stream 
 	return nil
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalIIntegrationWithExternalHelper = IntegrationWithExternalIIntegrationWithExternal_Helper{}
 

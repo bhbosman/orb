@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalEnumValueArray) Write(stream __goidl__.IWrite
 type IntegrationWithExternalEnumValueArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalEnumValueArrayHelper = IntegrationWithExternalEnumValueArray_Helper{}
 

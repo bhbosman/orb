@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalFloatTypeArray) Write(stream __goidl__.IWrite
 type IntegrationWithExternalFloatTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalFloatTypeArrayHelper = IntegrationWithExternalFloatTypeArray_Helper{}
 

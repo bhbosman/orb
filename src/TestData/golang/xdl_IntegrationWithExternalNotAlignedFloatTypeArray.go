@@ -10,7 +10,7 @@ import __reflect__ "reflect"
 // Exception Decl: false
 type IntegrationWithExternalNotAlignedFloatTypeArray struct {
 	__goidl__.IdlObject
-	Dummy byte `json:"Dummy"`
+	Dummy byte        `json:"Dummy"`
 	Value [16]float32 `json:"Value"`
 }
 
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalNotAlignedFloatTypeArray) Write(stream __goid
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedFloatTypeArray_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedFloatTypeArrayHelper = IntegrationWithExternalNotAlignedFloatTypeArray_Helper{}

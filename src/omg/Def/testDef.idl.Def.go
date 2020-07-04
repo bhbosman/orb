@@ -70,7 +70,6 @@ func (self *DefDef) Write(stream __goidl__.IWriteAny) error {
 type DefDef_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var DefDefHelper = DefDef_Helper{}
 

@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalBooleanTypeSequence) Write(stream __goidl__.I
 type IntegrationWithExternalBooleanTypeSequence_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalBooleanTypeSequenceHelper = IntegrationWithExternalBooleanTypeSequence_Helper{}
 

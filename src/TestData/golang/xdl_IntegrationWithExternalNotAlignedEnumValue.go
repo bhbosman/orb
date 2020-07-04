@@ -33,7 +33,6 @@ func (self IntegrationWithExternalNotAlignedEnumValue_Helper) Write(stream __goi
 	return __goidl__.IdlUInt32Helper.Write(stream, v)
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedEnumValueHelper = IntegrationWithExternalNotAlignedEnumValue_Helper{}
 

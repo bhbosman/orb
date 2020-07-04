@@ -43,7 +43,7 @@ func (self *IntegrationWithExternalNotAlignedDoubleTypeSeq) ReadValue(stream __g
 		for i = 0; i < n; i++ {
 			self.Array[i] = &IntegrationWithExternalNotAlignedDoubleType{}
 			err = self.Array[i].ReadValue(stream)
-				if err != nil {
+			if err != nil {
 				return err
 			}
 		}
@@ -66,7 +66,7 @@ func (self *IntegrationWithExternalNotAlignedDoubleTypeSeq) Write(stream __goidl
 	}
 	err = __goidl__.IdlUInt32Helper.Write(stream, uint32(len(self.Array)))
 	if err != nil {
-	return err
+		return err
 	}
 	if len(self.Array) > 0 {
 		for _, item := range self.Array {
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalNotAlignedDoubleTypeSeq) Write(stream __goidl
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedDoubleTypeSeq_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedDoubleTypeSeqHelper = IntegrationWithExternalNotAlignedDoubleTypeSeq_Helper{}

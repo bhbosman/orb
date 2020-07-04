@@ -43,7 +43,7 @@ func (self *IntegrationWithExternalNotAlignedBooleanTypeSeq) ReadValue(stream __
 		for i = 0; i < n; i++ {
 			self.Array[i] = &IntegrationWithExternalNotAlignedBooleanType{}
 			err = self.Array[i].ReadValue(stream)
-				if err != nil {
+			if err != nil {
 				return err
 			}
 		}
@@ -66,7 +66,7 @@ func (self *IntegrationWithExternalNotAlignedBooleanTypeSeq) Write(stream __goid
 	}
 	err = __goidl__.IdlUInt32Helper.Write(stream, uint32(len(self.Array)))
 	if err != nil {
-	return err
+		return err
 	}
 	if len(self.Array) > 0 {
 		for _, item := range self.Array {
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalNotAlignedBooleanTypeSeq) Write(stream __goid
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedBooleanTypeSeq_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedBooleanTypeSeqHelper = IntegrationWithExternalNotAlignedBooleanTypeSeq_Helper{}

@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalUnsignedShortTypeSequence) Write(stream __goi
 type IntegrationWithExternalUnsignedShortTypeSequence_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalUnsignedShortTypeSequenceHelper = IntegrationWithExternalUnsignedShortTypeSequence_Helper{}
 

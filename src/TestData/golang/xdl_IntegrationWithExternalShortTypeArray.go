@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalShortTypeArray) Write(stream __goidl__.IWrite
 type IntegrationWithExternalShortTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalShortTypeArrayHelper = IntegrationWithExternalShortTypeArray_Helper{}
 

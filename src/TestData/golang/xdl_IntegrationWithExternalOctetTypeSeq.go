@@ -43,7 +43,7 @@ func (self *IntegrationWithExternalOctetTypeSeq) ReadValue(stream __goidl__.IRea
 		for i = 0; i < n; i++ {
 			self.Array[i] = &IntegrationWithExternalOctetType{}
 			err = self.Array[i].ReadValue(stream)
-				if err != nil {
+			if err != nil {
 				return err
 			}
 		}
@@ -66,7 +66,7 @@ func (self *IntegrationWithExternalOctetTypeSeq) Write(stream __goidl__.IWriteAn
 	}
 	err = __goidl__.IdlUInt32Helper.Write(stream, uint32(len(self.Array)))
 	if err != nil {
-	return err
+		return err
 	}
 	if len(self.Array) > 0 {
 		for _, item := range self.Array {
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalOctetTypeSeq) Write(stream __goidl__.IWriteAn
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalOctetTypeSeq_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalOctetTypeSeqHelper = IntegrationWithExternalOctetTypeSeq_Helper{}

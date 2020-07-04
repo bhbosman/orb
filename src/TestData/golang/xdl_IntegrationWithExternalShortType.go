@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalShortType) Write(stream __goidl__.IWriteAny) 
 type IntegrationWithExternalShortType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalShortTypeHelper = IntegrationWithExternalShortType_Helper{}
 

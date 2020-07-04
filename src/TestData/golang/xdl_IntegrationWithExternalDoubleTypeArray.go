@@ -72,7 +72,6 @@ func (self *IntegrationWithExternalDoubleTypeArray) Write(stream __goidl__.IWrit
 type IntegrationWithExternalDoubleTypeArray_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalDoubleTypeArrayHelper = IntegrationWithExternalDoubleTypeArray_Helper{}
 

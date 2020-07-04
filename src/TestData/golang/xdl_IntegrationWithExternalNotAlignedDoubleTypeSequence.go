@@ -10,8 +10,8 @@ import __reflect__ "reflect"
 // Exception Decl: false
 type IntegrationWithExternalNotAlignedDoubleTypeSequence struct {
 	__goidl__.IdlObject
-	Dummy byte `json:"Dummy"`
-	Seq IntegrationWithExternalNotAlignedDoubleTypeSeq `json:"Seq"`
+	Dummy byte                                           `json:"Dummy"`
+	Seq   IntegrationWithExternalNotAlignedDoubleTypeSeq `json:"Seq"`
 }
 
 //noinspection GoSnakeCaseUsage
@@ -78,7 +78,6 @@ func (self *IntegrationWithExternalNotAlignedDoubleTypeSequence) Write(stream __
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedDoubleTypeSequence_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedDoubleTypeSequenceHelper = IntegrationWithExternalNotAlignedDoubleTypeSequence_Helper{}

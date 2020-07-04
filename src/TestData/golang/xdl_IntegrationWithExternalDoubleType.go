@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalDoubleType) Write(stream __goidl__.IWriteAny)
 type IntegrationWithExternalDoubleType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalDoubleTypeHelper = IntegrationWithExternalDoubleType_Helper{}
 

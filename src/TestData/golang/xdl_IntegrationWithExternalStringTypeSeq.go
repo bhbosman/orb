@@ -43,7 +43,7 @@ func (self *IntegrationWithExternalStringTypeSeq) ReadValue(stream __goidl__.IRe
 		for i = 0; i < n; i++ {
 			self.Array[i] = &IntegrationWithExternalStringType{}
 			err = self.Array[i].ReadValue(stream)
-				if err != nil {
+			if err != nil {
 				return err
 			}
 		}
@@ -66,7 +66,7 @@ func (self *IntegrationWithExternalStringTypeSeq) Write(stream __goidl__.IWriteA
 	}
 	err = __goidl__.IdlUInt32Helper.Write(stream, uint32(len(self.Array)))
 	if err != nil {
-	return err
+		return err
 	}
 	if len(self.Array) > 0 {
 		for _, item := range self.Array {
@@ -82,7 +82,6 @@ func (self *IntegrationWithExternalStringTypeSeq) Write(stream __goidl__.IWriteA
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalStringTypeSeq_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalStringTypeSeqHelper = IntegrationWithExternalStringTypeSeq_Helper{}

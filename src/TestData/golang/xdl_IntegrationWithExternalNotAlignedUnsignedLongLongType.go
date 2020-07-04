@@ -10,7 +10,7 @@ import __reflect__ "reflect"
 // Exception Decl: false
 type IntegrationWithExternalNotAlignedUnsignedLongLongType struct {
 	__goidl__.IdlObject
-	Dummy byte `json:"Dummy"`
+	Dummy byte   `json:"Dummy"`
 	Value uint64 `json:"Value"`
 }
 
@@ -78,7 +78,6 @@ func (self *IntegrationWithExternalNotAlignedUnsignedLongLongType) Write(stream 
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedUnsignedLongLongType_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedUnsignedLongLongTypeHelper = IntegrationWithExternalNotAlignedUnsignedLongLongType_Helper{}

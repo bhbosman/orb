@@ -33,7 +33,6 @@ func (self IntegrationWithExternalEnumValue_Helper) Write(stream __goidl__.IWrit
 	return __goidl__.IdlUInt32Helper.Write(stream, v)
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalEnumValueHelper = IntegrationWithExternalEnumValue_Helper{}
 

@@ -40,7 +40,6 @@ func (self *AbcAbcSeq) Read(stream __goidl__.IReadAny) error {
 type AbcAbcSeq_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var AbcAbcSeqHelper = AbcAbcSeq_Helper{}
 

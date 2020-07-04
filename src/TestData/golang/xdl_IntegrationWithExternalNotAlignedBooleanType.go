@@ -79,7 +79,6 @@ func (self *IntegrationWithExternalNotAlignedBooleanType) Write(stream __goidl__
 type IntegrationWithExternalNotAlignedBooleanType_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedBooleanTypeHelper = IntegrationWithExternalNotAlignedBooleanType_Helper{}
 

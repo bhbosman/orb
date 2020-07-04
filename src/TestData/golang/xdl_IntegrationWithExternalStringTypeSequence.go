@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalStringTypeSequence) Write(stream __goidl__.IW
 type IntegrationWithExternalStringTypeSequence_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalStringTypeSequenceHelper = IntegrationWithExternalStringTypeSequence_Helper{}
 

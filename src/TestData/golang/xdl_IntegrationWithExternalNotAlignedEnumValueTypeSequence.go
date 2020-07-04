@@ -10,8 +10,8 @@ import __reflect__ "reflect"
 // Exception Decl: false
 type IntegrationWithExternalNotAlignedEnumValueTypeSequence struct {
 	__goidl__.IdlObject
-	Dummy byte `json:"Dummy"`
-	Seq IntegrationWithExternalNotAlignedEnumValueTypeSeq `json:"Seq"`
+	Dummy byte                                              `json:"Dummy"`
+	Seq   IntegrationWithExternalNotAlignedEnumValueTypeSeq `json:"Seq"`
 }
 
 //noinspection GoSnakeCaseUsage
@@ -78,7 +78,6 @@ func (self *IntegrationWithExternalNotAlignedEnumValueTypeSequence) Write(stream
 //noinspection GoSnakeCaseUsage
 type IntegrationWithExternalNotAlignedEnumValueTypeSequence_Helper struct {
 }
-
 
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalNotAlignedEnumValueTypeSequenceHelper = IntegrationWithExternalNotAlignedEnumValueTypeSequence_Helper{}

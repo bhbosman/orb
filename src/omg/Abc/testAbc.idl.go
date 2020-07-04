@@ -43,7 +43,6 @@ func (self AbcMagicN_Helper) Write(stream __goidl__.IWriteAny, v [4]byte) error 
 	return nil
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var AbcMagicNHelper = AbcMagicN_Helper{}
 

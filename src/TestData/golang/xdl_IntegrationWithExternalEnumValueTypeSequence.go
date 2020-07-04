@@ -68,7 +68,6 @@ func (self *IntegrationWithExternalEnumValueTypeSequence) Write(stream __goidl__
 type IntegrationWithExternalEnumValueTypeSequence_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var IntegrationWithExternalEnumValueTypeSequenceHelper = IntegrationWithExternalEnumValueTypeSequence_Helper{}
 

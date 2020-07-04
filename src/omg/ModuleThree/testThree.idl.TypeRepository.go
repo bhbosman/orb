@@ -58,7 +58,6 @@ func (self *ThreeTypeRepository) Write(stream __goidl__.IWriteAny) error {
 type ThreeTypeRepository_Helper struct {
 }
 
-
 //noinspection GoUnusedGlobalVariable
 var ThreeTypeRepositoryHelper = ThreeTypeRepository_Helper{}
 
